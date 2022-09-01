@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gridgrid4RowModel" type="com.application.app.modules.iphone13promaxthirteen.data.model.Gridgrid4RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumngrid"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_1">
+        <ImageView android:id="@+id/imageGrid"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_26pxh"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="@dimen/_26pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_grid"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_grid"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtNewOrder"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_53pxv"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{gridgrid4RowModel.txtNewOrder}"
+            style="@style/txtPoppinsregular18_2" tools:text="@string/lbl_new_order"/>
+    </LinearLayout>
+</layout>

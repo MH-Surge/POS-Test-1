@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingOneRowModel" type="com.application.app.modules.onboardingone.data.model.OnboardingOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowretailer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnretailer"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25pxv"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_weight="0.93" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRetailer"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{onboardingOneRowModel.txtRetailer}"
+                style="@style/txtPoppinssemibold15" tools:text="@string/lbl_retailer"/>
+            <TextView android:id="@+id/txtShopGroceryS"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:text="@{onboardingOneRowModel.txtShopGroceryS}"
+                style="@style/txtPoppinsregular12" tools:text="@string/msg_shop_grocery_s"/>
+        </LinearLayout>
+        <View
+            android:background="@drawable/rectangle_bg_gray_200_radius_10"
+            android:id="@+id/viewEllipseTwentyFour"
+            android:layout_height="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_43pxv"
+            android:layout_marginEnd="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_43pxv" android:layout_width="@dimen/_20pxh"/>
+    </LinearLayout>
+</layout>

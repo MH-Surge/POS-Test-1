@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingEightVM" type="com.application.app.modules.onboardingeight.data.viewmodel.OnboardingEightVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameOnboardingEigh"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnwelcometo"
+            android:layout_gravity="top|center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_117pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_117pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackwelcometo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh" android:layout_width="@dimen/_121pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtWelcometo"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{onboardingEightVM.onboardingEightModel.txtWelcometo}"
+                    style="@style/txtPoppinsregular20" tools:text="@string/lbl_welcome_to"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtWelcometoOne"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{onboardingEightVM.onboardingEightModel.txtWelcometoOne}"
+                    style="@style/txtPoppinsregular20" tools:text="@string/lbl_welcome_to"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtLinQPOS"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{onboardingEightVM.onboardingEightModel.txtLinQPOS}"
+                style="@style/txtPoppinssemibold50_1" tools:text="@string/lbl_linq_pos"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSignInBelow"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_91pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{onboardingEightVM.onboardingEightModel.txtSignInBelow}"
+                style="@style/txt_1" tools:text="@string/lbl_sign_in_below"/>
+            <EditText
+                android:background="@drawable/rectangle_border_gray_900_radius_6_2"
+                android:ellipsize="end"
+                android:hint="@string/lbl_e_mail_address2"
+                android:id="@+id/etGroupThirtyThree"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_19pxh"
+                android:paddingTop="@dimen/_16pxv"
+                android:singleLine="true"
+                android:text="@={onboardingEightVM.onboardingEightModel.etGroupThirtyThreeValue}"
+                android:textColorHint="@color/gray_900"
+                style="@style/etRoundedOutline_4" tools:ignore="Autofill"/>
+            <EditText
+                android:background="@drawable/rectangle_border_gray_900_radius_6_2"
+                android:ellipsize="end"
+                android:hint="@string/lbl_password"
+                android:id="@+id/etGroup106"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_19pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@={onboardingEightVM.onboardingEightModel.etGroup106Value}"
+                android:textColorHint="@color/gray_900"
+                style="@style/etRoundedOutline_4" tools:ignore="Autofill"/>
+            <FrameLayout android:id="@+id/frameStackellipsetwentytwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_56pxv"
+                android:layout_marginTop="@dimen/_35pxv" android:layout_width="@dimen/_381pxh">
+                <View
+                    android:background="@drawable/rectangle_bg_bluegray_100_radius_154_5"
+                    android:id="@+id/viewEllipseTwentyTwo"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_27pxv"
+                    android:layout_marginEnd="@dimen/_35pxh"
+                    android:layout_marginStart="@dimen/_35pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_309pxh"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSignIn"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_sign_in"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_sign_in"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackforgotpassword"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_17pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_30pxv" android:layout_width="@dimen/_211pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtForgotPassword"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{onboardingEightVM.onboardingEightModel.txtForgotPassword}"
+                    style="@style/txtPoppinssemibold15_2" tools:text="@string/msg_forgot_password"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtForgotPasswordOne"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{onboardingEightVM.onboardingEightModel.txtForgotPasswordOne}"
+                    style="@style/txtPoppinssemibold15_2" tools:text="@string/msg_forgot_password"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowconfirmation"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_34pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackconfirmation"
+                    android:layout_height="@dimen/_15pxv"
+                    android:layout_marginBottom="@dimen/_3pxv" android:layout_width="@dimen/_176pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtConfirmation"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{onboardingEightVM.onboardingEightModel.txtConfirmation}"
+                        style="@style/txtPoppinsregular15_2" tools:text="@string/msg_dont_have_an_ac"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtConfirmationOne"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{onboardingEightVM.onboardingEightModel.txtConfirmationOne}"
+                        style="@style/txtPoppinsregular15_2" tools:text="@string/msg_dont_have_an_ac"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStacksignuphere"
+                    android:layout_height="@dimen/_17pxv"
+                    android:layout_marginStart="@dimen/_18pxh"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_101pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtSignUpHere"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{onboardingEightVM.onboardingEightModel.txtSignUpHere}"
+                        style="@style/txtPoppinssemibold15_2" tools:text="@string/lbl_sign_up_here"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtSignUpHereOne"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{onboardingEightVM.onboardingEightModel.txtSignUpHereOne}"
+                        style="@style/txtPoppinssemibold15_2" tools:text="@string/lbl_sign_up_here"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

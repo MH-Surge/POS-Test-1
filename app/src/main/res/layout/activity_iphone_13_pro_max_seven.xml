@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone13ProMaxSevenVM" type="com.application.app.modules.iphone13promaxseven.data.viewmodel.Iphone13ProMaxSevenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearIPhone13ProM"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnmenu"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_33pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_56pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowmenu"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageMenu"
+                        android:layout_height="@dimen/_24pxh"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="@dimen/_28pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_menu"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_menu"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLinQPOS"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_6pxv"
+                        android:layout_marginStart="@dimen/_92pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_weight="0.62"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{iphone13ProMaxSevenVM.iphone13ProMaxSevenModel.txtLinQPOS}"
+                        style="@style/txtPoppinssemibold25_1" tools:text="@string/lbl_linq_pos"/>
+                    <ImageView android:id="@+id/imageRectangleSixtySix"
+                        android:layout_height="@dimen/_40pxh"
+                        android:layout_marginStart="@dimen/_85pxh"
+                        android:layout_width="@dimen/_40pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_5pxh}"
+                        imageRes="@{@drawable/img_rectangle66}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle66"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowarrowone"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_36pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageArrowOne"
+                android:layout_height="@dimen/_2pxh"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="@dimen/_1pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrow1"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrow1"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtBack"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.1" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{iphone13ProMaxSevenVM.iphone13ProMaxSevenModel.txtBack}"
+                style="@style/txtPoppinsregular12_1" tools:text="@string/lbl_back"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSelectAPaymen"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_weight="0.9" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{iphone13ProMaxSevenVM.iphone13ProMaxSevenModel.txtSelectAPaymen}"
+                style="@style/txtPoppinssemibold20" tools:text="@string/msg_select_a_paymen"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:gravity="center_horizontal"
+            android:id="@+id/recyclerListcamera"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            itemSpace="@{@dimen/_15pxh}" tools:itemCount="2" tools:listitem="@layout/row_listcamera"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnsignal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_33pxh"
+            android:layout_marginStart="@dimen/_33pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:orientation="vertical" style="@style/groupStylegray_1">
+            <ImageView android:id="@+id/imageSignal"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_30pxh"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="@dimen/_37pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_signal_30x37"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_signal_30x37"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWallet"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{iphone13ProMaxSevenVM.iphone13ProMaxSevenModel.txtWallet}"
+                style="@style/txtPoppinsregular18_2" tools:text="@string/lbl_wallet"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtAppleAndroid"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_17pxv"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:text="@{iphone13ProMaxSevenVM.iphone13ProMaxSevenModel.txtAppleAndroid}"
+                style="@style/txtPoppinsregular10" tools:text="@string/msg_apple_android"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnCancel"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_82pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_16pxv" android:singleLine="true"
+            android:text="@string/lbl_cancel"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_cancel"/>
+    </LinearLayout>
+</layout>

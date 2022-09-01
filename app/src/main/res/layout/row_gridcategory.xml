@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gridcategoryRowModel" type="com.application.app.modules.iphone13promaxnineone.data.model.GridcategoryRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowcategory"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegray_900_1">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumncategory"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_weight="0.98" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCategory"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{gridcategoryRowModel.txtCategory}"
+                style="@style/txtPoppinsregular12_4" tools:text="@string/lbl_category"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSnacks"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{gridcategoryRowModel.txtSnacks}"
+                style="@style/txtPoppinssemibold12_2" tools:text="@string/lbl_snacks"/>
+        </LinearLayout>
+        <View
+            android:background="@drawable/rectangle_bg_gray_900_radius_5_925"
+            android:id="@+id/viewUnion"
+            android:layout_height="@dimen/_11pxh"
+            android:layout_marginBottom="@dimen/_36pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_37pxv" android:layout_width="@dimen/_3pxh"/>
+    </LinearLayout>
+</layout>

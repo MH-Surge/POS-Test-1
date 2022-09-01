@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectanglefifteenFourRowModel" type="com.application.app.modules.iphone13promaxfifteen.data.model.ListrectanglefifteenFourRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackmeatballs"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_172pxh">
+        <FrameLayout android:id="@+id/frameStackrectanglefifteenFour"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_164pxv"
+            android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_172pxh">
+            <ImageView android:id="@+id/imageRectangleFifteenFour"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_164pxh"
+                android:layout_width="@dimen/_172pxh"
+                android:scaleType="fitXY" cornerRadius="@{@dimen/_6pxh}"
+                imageRes="@{@drawable/img_rectangle15}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle15"/>
+            <View
+                android:background="@drawable/rectangle_bg_white_a700_radius_7_94"
+                android:id="@+id/viewUnionFour"
+                android:layout_gravity="top|end"
+                android:layout_height="@dimen/_15pxh"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_4pxh"/>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linearColumnmeatballsFour"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_900_cccornerRadius">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtMeatballsFour"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectanglefifteenFourRowModel.txtMeatballsFour}"
+                style="@style/txtPoppinssemibold15_1" tools:text="@string/lbl_meatballs"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

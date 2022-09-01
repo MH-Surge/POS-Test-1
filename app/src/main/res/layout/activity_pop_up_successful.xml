@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="popUpSuccessfulVM" type="com.application.app.modules.popupsuccessful.data.viewmodel.PopUpSuccessfulVM"/>
+    </data>
+    <FrameLayout android:id="@+id/framePopUpSuccessf"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnclose"
+            android:layout_gravity="top|center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_33pxh"
+            android:layout_marginStart="@dimen/_33pxh"
+            android:layout_marginTop="@dimen/_43pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowclose"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtClose"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.17"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{popUpSuccessfulVM.popUpSuccessfulModel.txtClose}"
+                        style="@style/txtPoppinssemibold14" tools:text="@string/lbl_close"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCompletePaymen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_44pxh"
+                        android:layout_weight="0.83"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{popUpSuccessfulVM.popUpSuccessfulModel.txtCompletePaymen}"
+                        style="@style/txtPoppinsregular20" tools:text="@string/msg_complete_paymen"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtThankYou"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_230pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{popUpSuccessfulVM.popUpSuccessfulModel.txtThankYou}"
+                style="@style/txtPoppinsregular40" tools:text="@string/lbl_thank_you"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtYourPaymentWa"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{popUpSuccessfulVM.popUpSuccessfulModel.txtYourPaymentWa}"
+                style="@style/txtPoppinsregular20" tools:text="@string/msg_your_payment_wa2"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnDone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_252pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_16pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_16pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_done"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_done"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

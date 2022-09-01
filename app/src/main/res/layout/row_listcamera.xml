@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listcameraRowModel" type="com.application.app.modules.iphone13promaxseven.data.model.ListcameraRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowcamera"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumncamera"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStylegray_1">
+            <ImageView android:id="@+id/imageCamera"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_30pxh"
+                android:layout_marginEnd="@dimen/_61pxh"
+                android:layout_marginStart="@dimen/_61pxh"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="@dimen/_37pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_camera"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_camera"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtCard"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_53pxv"
+                android:layout_marginEnd="@dimen/_60pxh"
+                android:layout_marginStart="@dimen/_61pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listcameraRowModel.txtCard}"
+                style="@style/txtPoppinsregular18_2" tools:text="@string/lbl_card"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumntrash"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_weight="0.5" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStylegray_1">
+            <ImageView android:id="@+id/imageTrash"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_30pxh"
+                android:layout_marginEnd="@dimen/_60pxh"
+                android:layout_marginStart="@dimen/_60pxh"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="@dimen/_37pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_trash_30x37"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_trash_30x37"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtCash"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_53pxv"
+                android:layout_marginEnd="@dimen/_59pxh"
+                android:layout_marginStart="@dimen/_60pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listcameraRowModel.txtCash}"
+                style="@style/txtPoppinsregular18_2" tools:text="@string/lbl_cash"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

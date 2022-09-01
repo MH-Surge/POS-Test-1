@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.application.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameSplashScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageGroup105"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_group105_blue_a200}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_group105_blue_a200"/>
+        <LinearLayout android:id="@+id/linearColumnlinqpos"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_95pxv"
+            android:layout_marginEnd="@dimen/_100pxh"
+            android:layout_marginStart="@dimen/_100pxh"
+            android:layout_marginTop="@dimen/_95pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtLinQPOS"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{splashScreenVM.splashScreenModel.txtLinQPOS}"
+                style="@style/txtPoppinssemibold50" tools:text="@string/lbl_linq_pos"/>
+            <ImageView android:id="@+id/imageUnion"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_marginEnd="@dimen/_36pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="@dimen/_150pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_union"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_union"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtByLinQFinace"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_207pxv"
+                android:layout_width="match_parent"
+                android:text="@{splashScreenVM.splashScreenModel.txtByLinQFinace}"
+                style="@style/txtPoppinsregular15_1" tools:text="@string/msg_by_linq_finace"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtAllRightsRese"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{splashScreenVM.splashScreenModel.txtAllRightsRese}"
+                style="@style/txtPoppinsregular15_1" tools:text="@string/msg_all_rights_rese"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
