@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listmenuTwoRowModel" type="com.application.app.modules.iphone13promaxseventwo.data.model.ListmenuTwoRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowmenu"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnmenu"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStylegray_1">
+            <ImageView android:id="@+id/imageMenuTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_37pxh"
+                android:layout_marginEnd="@dimen/_41pxh"
+                android:layout_marginStart="@dimen/_41pxh"
+                android:layout_marginTop="@dimen/_33pxv"
+                android:layout_width="@dimen/_33pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_menu_37x33"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_menu_37x33"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtInventory"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_49pxv"
+                android:layout_marginEnd="@dimen/_41pxh"
+                android:layout_marginStart="@dimen/_41pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listmenuTwoRowModel.txtInventory}"
+                style="@style/txtPoppinsregular18_2" tools:text="@string/lbl_inventory"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnuser"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_weight="0.5" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStylegray_1">
+            <ImageView android:id="@+id/imageUser"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_28pxh"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="@dimen/_37pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_user"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtEmployeeManage"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_22pxv"
+                android:layout_marginEnd="@dimen/_22pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_31pxv"
+                android:layout_width="match_parent"
+                android:text="@{listmenuTwoRowModel.txtEmployeeManage}"
+                style="@style/txtPoppinsregular18_2" tools:text="@string/msg_employee_manage"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

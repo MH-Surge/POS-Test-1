@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone13ProMaxNineteenVM" type="com.application.app.modules.iphone13promaxnineteen.data.viewmodel.Iphone13ProMaxNineteenVM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumngroup161"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <EditText
+                android:background="@drawable/rectangle_border_gray_900_radius_10"
+                android:ellipsize="end"
+                android:hint="@string/lbl_search_items"
+                android:id="@+id/etGroup161" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_16pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_20pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@={iphone13ProMaxNineteenVM.iphone13ProMaxNineteenModel.etGroup161Value}"
+                android:textColorHint="@color/gray_900_8e"
+                style="@style/etRoundedOutline_1" tools:ignore="Autofill"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSearch"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_search"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_2" tools:text="@string/lbl_search"/>
+            <LinearLayout android:id="@+id/linearRowrectanglefifteen"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout
+                    android:id="@+id/frameStackgroupseventythree"
+                    android:layout_height="@dimen/_165pxv" android:layout_width="@dimen/_172pxh">
+                    <FrameLayout
+                        android:id="@+id/frameStackrectanglefifteen"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_164pxv"
+                        android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_172pxh">
+                        <ImageView
+                            android:id="@+id/imageRectangleFifteen"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_164pxh"
+                            android:layout_width="@dimen/_172pxh"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_6pxh}"
+                            imageRes="@{@drawable/img_rectangle15_164x172}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle15_164x172"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_radius_7_94"
+                            android:id="@+id/viewUnion"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_15pxh"
+                            android:layout_marginBottom="@dimen/_15pxv"
+                            android:layout_marginEnd="@dimen/_17pxh"
+                            android:layout_marginStart="@dimen/_17pxh"
+                            android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_4pxh"/>
+                    </FrameLayout>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_gray_900_cc_radius_bl_6_br_6"
+                        android:ellipsize="end"
+                        android:hint="@string/lbl_steak_chips"
+                        android:id="@+id/etGroupSeventyThree"
+                        android:inputType="text"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_10pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_19pxh"
+                        android:paddingTop="@dimen/_13pxv"
+                        android:singleLine="true"
+                        android:text="@={iphone13ProMaxNineteenVM.iphone13ProMaxNineteenModel.etGroupSeventyThreeValue}"
+                        android:textColorHint="@color/white_A700"
+                        style="@style/etSolidRoundedBottomCorner" tools:ignore="Autofill"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackspagehettimeat"
+                    android:layout_height="@dimen/_165pxv"
+                    android:layout_marginStart="@dimen/_14pxh" android:layout_width="@dimen/_173pxh">
+                    <FrameLayout
+                        android:id="@+id/frameStackrectanglefifteenOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_164pxv"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginStart="@dimen/_1pxh" android:layout_width="@dimen/_172pxh">
+                        <ImageView
+                            android:id="@+id/imageRectangleFifteenOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_164pxh"
+                            android:layout_width="@dimen/_172pxh"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_6pxh}"
+                            imageRes="@{@drawable/img_rectangle15_1}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle15_1"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_radius_7_94"
+                            android:id="@+id/viewUnionOne"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_15pxh"
+                            android:layout_marginBottom="@dimen/_15pxv"
+                            android:layout_marginEnd="@dimen/_17pxh"
+                            android:layout_marginStart="@dimen/_17pxh"
+                            android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_4pxh"/>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:id="@+id/linearColumnspagehettimeat"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylegray_900_cccornerRadius">
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtSpagehettiMeat"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{iphone13ProMaxNineteenVM.iphone13ProMaxNineteenModel.txtSpagehettiMeat}"
+                            style="@style/txtPoppinssemibold15_1" tools:text="@string/msg_spagehetti_meat"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerListrectanglefifteenTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_14pxh}" tools:itemCount="2" tools:listitem="@layout/row_listrectanglefifteen_two2"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerGridrectanglefifteenFour"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" itemSpace="@{@dimen/_15pxh}"
+                tools:itemCount="4" tools:listitem="@layout/row_gridrectanglefifteen_four"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

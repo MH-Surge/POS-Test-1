@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingTwoVM" type="com.application.app.modules.onboardingtwo.data.viewmodel.OnboardingTwoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnuploadfiles"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_81pxv"
+        android:layout_marginEnd="@dimen/_23pxh"
+        android:layout_marginStart="@dimen/_23pxh"
+        android:layout_marginTop="@dimen/_87pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearOnboardingTwo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtUploadFiles"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_130pxh"
+                    android:layout_marginStart="@dimen/_130pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{onboardingTwoVM.onboardingTwoModel.txtUploadFiles}"
+                    style="@style/txtPoppinsregular20" tools:text="@string/lbl_upload_files"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerOnboardingTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_40pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_20pxh}" tools:itemCount="3" tools:listitem="@layout/row_onboarding_two"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnNext"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_167pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_17pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_17pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_next"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_next"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSkipforNow"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_130pxh"
+                    android:layout_marginStart="@dimen/_130pxh"
+                    android:layout_marginTop="@dimen/_30pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{onboardingTwoVM.onboardingTwoModel.txtSkipforNow}"
+                    style="@style/txtPoppinsregular18"
+                    textUnderline="true" tools:text="@string/lbl_skip_for_now"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listordercounterOneRowModel" type="com.application.app.modules.iphone13promaxthreeone.data.model.ListordercounterOneRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnordercounterOne"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylewhite_1">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOrderCounterOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listordercounterOneRowModel.txtOrderCounterOne}"
+            style="@style/txtPoppinssemibold20" tools:text="@string/lbl_order_002"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtItemsCounterOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listordercounterOneRowModel.txtItemsCounterOne}"
+            style="@style/txtPoppinsregular20" tools:text="@string/lbl_2_items"/>
+        <LinearLayout android:id="@+id/linearRowtotal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTotalOne"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listordercounterOneRowModel.txtTotalOne}"
+                style="@style/txtPoppinsregular18" tools:text="@string/lbl_total2"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPriceOne"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_123pxh"
+                android:layout_weight="0.75" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listordercounterOneRowModel.txtPriceOne}"
+                style="@style/txtPoppinssemibold18_1" tools:text="@string/lbl_mwk_18_750_00"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

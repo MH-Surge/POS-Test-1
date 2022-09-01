@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.application.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.application.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.application.app.modules.addnewitemfinishedgoods.ui.AddNewItemFinishedGoodsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtwentytwo.ui.Iphone13ProMaxTwentytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtenone.ui.Iphone13ProMaxTenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.framefortytwo.ui.FrameFortytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfiveone.ui.Iphone13ProMaxFiveOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfourteen.ui.Iphone13ProMaxFourteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxnine.ui.Iphone13ProMaxNineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboardingtwo.ui.OnboardingTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxten.ui.Iphone13ProMaxTenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxseventwo.ui.Iphone13ProMaxSevenTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.addnewitemtoinventorypopup.ui.AddNewItemToInventoryPopUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.ingredientquantity.ui.IngredientQuantityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtwelveone.ui.Iphone13ProMaxTwelveOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.popup.ui.PopUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxsixteen.ui.Iphone13ProMaxSixteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.forgotpasswordthree.ui.ForgotPasswordThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfifteenone.ui.Iphone13ProMaxFifteenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboardingone.ui.OnboardingOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxelevenone.ui.Iphone13ProMaxElevenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxnineone.ui.Iphone13ProMaxNineOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.popupsuccessful.ui.PopUpSuccessfulActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboardingseven.ui.OnboardingSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtwentyone.ui.Iphone13ProMaxTwentyoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxseven.ui.Iphone13ProMaxSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxone.ui.Iphone13ProMaxOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.framefortythree.ui.FrameFortythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.forgotpasswordone.ui.ForgotPasswordOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxsixone.ui.Iphone13ProMaxSixOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfive.ui.Iphone13ProMaxFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.addnewitemfinishedgoodsone.ui.AddNewItemFinishedGoodsOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtwelve.ui.Iphone13ProMaxTwelveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfour.ui.Iphone13ProMaxFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.popupunsuccessful.ui.PopUpUnsuccessfulActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxeighteen.ui.Iphone13ProMaxEighteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxseventeen.ui.Iphone13ProMaxSeventeenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxeleven.ui.Iphone13ProMaxElevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboardingfour.ui.OnboardingFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.loginsignup.ui.LogInSignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxthirteenone.ui.Iphone13ProMaxThirteenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxeight.ui.Iphone13ProMaxEightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtwenty1.ui.Iphone13ProMaxTwenty1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtwentythree.ui.Iphone13ProMaxTwentythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxthirteen.ui.Iphone13ProMaxThirteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.popupimagesearch.ui.PopUpImageSearchActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxthreeone.ui.Iphone13ProMaxThreeOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.analytics.ui.AnalyticsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfourone.ui.Iphone13ProMaxFourOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.emptystate.ui.EmptyStateActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtwo.ui.Iphone13ProMaxTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxsix.ui.Iphone13ProMaxSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboardingeight.ui.OnboardingEightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.loginsignupone.ui.LogInSignUpOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.forgotpassword.ui.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.forgotpasswordtwo.ui.ForgotPasswordTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboardingthree.ui.OnboardingThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.addanewcategory.ui.AddANewCategoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxsevenone.ui.Iphone13ProMaxSevenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfourteenone.ui.Iphone13ProMaxFourteenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboardingsix.ui.OnboardingSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxthree.ui.Iphone13ProMaxThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboardingfive.ui.OnboardingFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfifteen.ui.Iphone13ProMaxFifteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxtwentyfour.ui.Iphone13ProMaxTwentyfourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.popupone.ui.PopUpOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.menuview.ui.MenuViewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.onboarding.ui.OnboardingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.iphone13promaxfivetwo.ui.Iphone13ProMaxFiveTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.addnewitem.ui.AddNewItemActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingTwoRowModel" type="com.application.app.modules.onboardingtwo.data.model.OnboardingTwoRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowarrowtwo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnarrowtwo"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.42" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+            <View android:background="@color/white_A700"
+                android:id="@+id/lineArrowTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_41pxv" android:layout_width="@dimen/_3pxh"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtUploadFile"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_37pxv"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{onboardingTwoRowModel.txtUploadFile}"
+                style="@style/txtPoppinsregular14" tools:text="@string/lbl_upload_file"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumncompanylogo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_23pxv"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_weight="0.58" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCompanyLogo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{onboardingTwoRowModel.txtCompanyLogo}"
+                style="@style/txtPoppinssemibold16" tools:text="@string/lbl_company_logo"/>
+            <TextView android:id="@+id/txtUploadyourCom"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:text="@{onboardingTwoRowModel.txtUploadyourCom}"
+                style="@style/txtPoppinsregular16" tools:text="@string/msg_upload_your_com"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

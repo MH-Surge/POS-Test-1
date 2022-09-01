@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listserverRowModel" type="com.application.app.modules.iphone13promaxfourone.data.model.ListserverRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnserver"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_51cornerRadius">
+        <TextView android:ellipsize="end" android:id="@+id/txtServer"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listserverRowModel.txtServer}"
+            style="@style/txtPoppinsregular14_1" tools:text="@string/lbl_server"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtWadeWarren"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listserverRowModel.txtWadeWarren}"
+            style="@style/txtPoppinsregular20" tools:text="@string/lbl_wade_warren"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowemail"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEMailTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_weight="0.19" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listserverRowModel.txtEMailTwo}"
+                style="@style/txtPoppinsregular14_1" tools:text="@string/lbl_e_mail2"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEmailOne"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_weight="0.81" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listserverRowModel.txtEmailOne}"
+                style="@style/txtPoppinsregular14_1" tools:text="@string/msg_wadewarren_exam"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

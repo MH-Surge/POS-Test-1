@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingSixVM" type="com.application.app.modules.onboardingsix.data.viewmodel.OnboardingSixVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearOnboardingSix"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtOhNo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_124pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{onboardingSixVM.onboardingSixModel.txtOhNo}"
+            style="@style/txtPoppinsregular20" tools:text="@string/lbl_oh_no"/>
+        <ImageView android:id="@+id/imageDashboard"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_75pxh"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_135pxv"
+            android:layout_width="@dimen/_75pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_dashboard"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_dashboard"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtWereSorry"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{onboardingSixVM.onboardingSixModel.txtWereSorry}"
+            style="@style/txtPoppinssemibold20" tools:text="@string/lbl_we_re_sorry"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtWeonlycatert"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_57pxv"
+            android:layout_width="match_parent"
+            android:text="@{onboardingSixVM.onboardingSixModel.txtWeonlycatert}"
+            style="@style/txtPoppinsregular18" tools:text="@string/msg_we_only_cater_t"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtSignYourBusin"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{onboardingSixVM.onboardingSixModel.txtSignYourBusin}"
+            style="@style/txtPoppinsregular18" textUnderline="true" tools:text="@string/msg_sign_your_busin"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnBackToLogin"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_60pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_16pxv" android:singleLine="true"
+            android:text="@string/lbl_back_to_login"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_back_to_login"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnStartOver"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_17pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_17pxv" android:singleLine="true"
+            android:text="@string/lbl_start_over"
+            android:textAllCaps="false"
+            style="@style/btnRoundedOutline_3" tools:text="@string/lbl_start_over"/>
+    </LinearLayout>
+</layout>

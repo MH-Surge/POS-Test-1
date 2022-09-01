@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectanglefifteenTwo2RowModel" type="com.application.app.modules.iphone13promaxnineteen.data.model.ListrectanglefifteenTwo2RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackdeconstructedb"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_173pxh">
+        <FrameLayout android:id="@+id/frameStackrectanglefifteenTwo"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_164pxv"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_1pxh" android:layout_width="@dimen/_172pxh">
+            <ImageView android:id="@+id/imageRectangleFifteenTwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_164pxh"
+                android:layout_width="@dimen/_172pxh"
+                android:scaleType="fitXY" cornerRadius="@{@dimen/_6pxh}"
+                imageRes="@{@drawable/img_rectangle15_2}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle15_2"/>
+            <View
+                android:background="@drawable/rectangle_bg_white_a700_radius_7_94"
+                android:id="@+id/viewUnionTwo"
+                android:layout_gravity="top|end"
+                android:layout_height="@dimen/_15pxh"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_4pxh"/>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linearColumndeconstructedb"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_900_cccornerRadius">
+            <TextView android:gravity="start"
+                android:id="@+id/txtDeconstructedB"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:text="@{listrectanglefifteenTwo2RowModel.txtDeconstructedB}"
+                style="@style/txtPoppinssemibold15_1" tools:text="@string/msg_deconstructed_b"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
